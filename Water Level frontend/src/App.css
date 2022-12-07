@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* CSS for Desktop view */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stripe {
+    width: 100%;
+    background-color: #429198;
+  }
+  
+  h1 {  
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 3em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px; 
+    color: #FFFFFF;
+  }
+  
+  h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    color: #429198;
+  }
+  
+  p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px; 
+  }
+  
+  a {
+    color: rgb(36, 123, 244);
+    text-decoration: none;
+  }
+  
+  .topSection {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #moreButton {
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', normal;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #429198;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+  }
+  
+  footer {
+    margin-top: 1em;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Inter', normal;
+    margin-bottom: 1em;
+  }
+  
+  .topSection {
+    margin: 6em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    align-items: center;
+  }
+  
+  .imgContainer {
+    margin-top: 1.3em;
+    margin-left: 2em;
+  }
+
+  .text-container {
+    margin-top: 1em;
+  }
+  
+  img  {
+    width: 393px;
+    height: 253px;
+    left: 979px;
+    top: 179px;
+  }
+  
+  /* the bottom section */
+  .bottomSection {
+    display: flex;
+    flex-direction: row;
+    animation: fadeIn linear 0.5s;
+    margin-right: 90px;
+    margin-left: 90px;
+    margin-bottom: 80px;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  .chart {
+    flex: 1 1 0;
+    padding-right: 1em;
+    width: 525px;
+    height: 375.94px;
+    left: 148px;
+    top: 551px;
+  }
+  
+  .info {
+    padding-left: 1em;
+    flex: 1 1 0; 
+  }
+  
+  #dateButton {
+    color: rgb(109, 109, 109);
+    border: solid 1.5px rgb(109, 109, 109);;
+    background-color: white;
+    border-radius: 0px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', normal;
+    text-align: left;
+    text-indent: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .month-year-picker {
+    margin: 0;
+  }
+
+/* CSS for mobile view */
+@media only screen and (max-width: 480px) {
+
+  h1 {  
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 1em;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px; 
+    color: #FFFFFF;
+  }
+  
+  .topSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  #moreButton {
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', normal;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #429198;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: none;
+  }
+  
+  .topSection {
+    margin: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .imgContainer {
+    margin-top: 0.5em;
+    margin-left: 1em;
+  }
+  
+  img  {
+    width: 90%;
+    height: 80%;
+    left: 600px;
+    top: 50px;
+  }
+  
+  .text-container {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 3em;
+  }
+  
+  .bottomSection {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn linear 0.5s;
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  
+  .chart {
+    flex: 1 1 0;
+    width: 90%;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .info {
+    padding-left: 1em;
+    flex: 1 1 0; 
+  }
+  
+  #dateButton {
+    color: rgb(109, 109, 109);
+    border: solid 1.5px rgb(109, 109, 109);;
+    background-color: white;
+    border-radius: 0px;
+    width: 250px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', normal;
+    text-align: left;
+    text-indent: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .month-year-picker {
+    margin: 0;
+  }
+}
+
+/* CSS for Tablet View */
+@media only screen and (max-width: 900px) and (min-width: 480px){
+  
+  .topSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .bottomSection {
+    display: flex;
+    flex-direction: column-reverse;
+    animation: fadeIn linear 0.5s;
+    margin-right: 4em;
+    margin-left: 2em;
+    margin-bottom: 0;
+    align-items: center;
+  }
+  
+  img  {
+    width: 90%;
+    height: 80%;
+    left: 600px;
+    top: 50px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-right: 3em;
+  }
+
+  .text-container {
+    margin-left: 2em;
+    margin-right: 1em;
+  }
+  
+  footer {
+    margin-right:1.5em;
+  }
+
+  .chart {
+    display:block;
+    
+    width: 72%;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+  }
+
+  .info {
+    margin-left: 5em;
+    margin-right: 3em;
+    flex: 1 1 0; 
+  }
+}
